@@ -1,23 +1,23 @@
 {
   "name": "fuzzy-finder",
-  "version": "1.14.3",
+  "version": "1.14.4",
   "main": "./lib/main",
   "description": "Open an editor to a file in the project with `cmd-t`.",
-  "repository": "https://github.com/atom/fuzzy-finder",
+  "repository": "https://github.com/Alex313031/fuzzy-finder-ng",
   "license": "MIT",
   "dependencies": {
-    "async": "0.2.6",
-    "atom-select-list": "^0.7.0",
-    "fs-plus": "^3.0.0",
-    "fuzzaldrin": "^2.0",
+    "@atom/fuzzy-native": "git+https://github.com/atom/fuzzy-native.git#934c5ad",
+    "async": "1.5.2",
+    "atom-select-list": "git+https://github.com/atom/atom-select-list.git#e8c7f87",
+    "fs-plus": "^3.1.1",
+    "fuzzaldrin": "^2.1.0",
     "fuzzaldrin-plus": "^0.6.0",
-    "@atom/fuzzy-native": "^1.1.2",
-    "humanize-plus": "~1.8.2",
-    "minimatch": "~3.0.3",
-    "temp": "~0.8.1",
+    "humanize-plus": "^1.8.2",
+    "minimatch": "^3.0.3",
+    "temp": "0.9.4",
     "underscore-plus": "^1.7.0",
-    "vscode-ripgrep": "^1.2.5",
-    "wrench": "^1.5"
+    "vscode-ripgrep": "1.9.0",
+    "wrench": "1.5.9"
   },
   "devDependencies": {
     "sinon": "9.0.3",
@@ -81,7 +81,7 @@
     "scoringSystem": {
       "type": "string",
       "default": "fast",
-      "description": "Scoring system to use. \"standard\" is the system used by other modals in Atom. \"alternate\" is an improved scoring system. \"fast\" is a much faster system, specially suitable for large projects. Default: \"fast\"",
+      "description": "Scoring system to use. \"standard\" is the system used by other modals in Atom-ng. \"alternate\" is an improved scoring system. \"fast\" is a much faster system, specially suitable for large projects. Default: \"fast\"",
       "enum": [
         "standard",
         "alternate",
